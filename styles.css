@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  width: 150px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #F9FAFB;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 40vw;
+  height: 100vh;
+  background-image: url("priscilla-du-preez-kuD4AvT6EMs-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.269);
+  width: 100%;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.credit {
+  color: white;
+  font-size: 15px;
+  font-family: Helvetica;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.269);
+  width: 100%;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+.credit a {
+  color: white;
+}
+
+.form-intro {
+  margin: 20px 20px 0px 20px;
+}
+
+h1 {
+  color: white;
+  font-family: Helvetica;
+  font-weight: 900;
+  font-size: 2.5em;
+}
+
+h2 {
+  margin: 0px 20px 20px 20px;
+  font-size: 1em;
+  color: #1D2F21;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+  background-color: #F9FAFB;
+  font-family: Helvetica;
+  font-size: 20px;
+  color: black;
+  height: 100vh;
+}
+
+.i1 {
+  margin: 50px 0px 20px 20px;
+  font-weight: bold;
+  color: #1D2F21;
+}
+
+.i2 {
+  margin: 0px 0px 20px 20px;
+  font-weight: bold;
+  color: #1D2F21;
+}
+
+.form-container {
+  box-shadow: 0 5px 5px #617a66;
+  padding: 40px 20px 20px 20px;
+  background-color: #edf7f0;
+  height: 40%;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 20px;
+  width: 70%;
+  gap: 20px;
+  padding-right: 40px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  min-width: 150px;
+}
+
+input {
+  border: 2px solid #1D2F21;
+  border-radius: 10px;
+  color: #1D2F21;
+  width: 100%;
+  font-weight: 300;
+  font-size: 15px;
+  padding: 5px;
+}
+
+input:not(:placeholder-shown):invalid {
+  border-color: red;
+}
+
+input:not(:placeholder-shown):focus:invalid {
+  background-color: rgba(255, 0, 0, 0.091);
+}
+
+input:focus {
+  outline: none;
+  background-color: #1d2f210e;
+}
+
+label {
+  color: #1D2F21;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 3px;
+}
+
+.form-end {
+  padding: 20px;
+}
+
+.submit-button {
+  all: unset;
+  cursor: pointer;
+  border: 1px solid #1D2F21;
+  margin: 20px 0px 20px 20px;
+  padding: 5px 30px;
+  border-radius: 10px;
+  color: white;
+  background-color: #1D2F21;
+  font-size: 18px;
+  width: auto;
+  text-align: center;
+  box-shadow: 0 4px 4px -4px #1D2F21;
+}
+
+.log-in {
+  margin-left: 20px;
+  color: #1D2F21;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.log-in a {
+  color: #1D2F21;
+}
+
+@media screen and (max-width: 950px) {
+  body {
+    flex-direction: column;
+  }
+  .left {
+    width: 100vw;
+    height: 100vh;
+    background-position: center center;
+  }
+  .right {
+    width: 100vw;
+    height: 0vh;
+  }
+  .form-container {
+    height: auto;
+    padding-bottom: 40px;
+    min-width: 250px;
+  }
+  form {
+    width: 100%;
+    padding-right: 40px;
+  }
+}
