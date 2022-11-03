@@ -142,15 +142,18 @@ input {
 
 input:not(:placeholder-shown):invalid {
   border-color: red;
+  box-shadow: rgba(255, 0, 0, 0.091);;
 }
 
 input:not(:placeholder-shown):focus:invalid {
   background-color: rgba(255, 0, 0, 0.091);
+  box-shadow: 0px 0px 1px 1px #1D2F21;
 }
 
 input:focus {
   outline: none;
   background-color: #1d2f210e;
+  box-shadow: 0px 0px 1px 1px #1D2F21;
 }
 
 label {
@@ -174,9 +177,20 @@ label {
   color: white;
   background-color: #1D2F21;
   font-size: 18px;
+  font-weight: bold;
   width: auto;
   text-align: center;
   box-shadow: 0 4px 4px -4px #1D2F21;
+}
+
+button:hover {
+  background-color: white;
+  border-color: #1D2F21;
+  color: #1D2F21;
+}
+
+button:focus {
+  box-shadow: 0px 0px 1px 1px #1D2F21;
 }
 
 .log-in {
